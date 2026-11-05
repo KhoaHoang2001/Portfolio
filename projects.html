@@ -1,1 +1,89 @@
-Here are my projects
+<style>
+    .project_article {
+        padding: 10px 20px;
+        border: solid 3px #040f16;
+        border-radius: 10px;
+        align-content: end;
+        margin-bottom: 30px;
+    }
+
+    .project_article * {
+        margin-top: 10px;
+        font-family: sans-serif;
+    }
+
+    .project_article button {
+        padding: 20px 20px;
+        border: 0px;
+        border-radius: 10px;
+        background-color: #040f16;
+        color: #fbfbff;
+        font-size: 20px;
+        transition: background-color 0.5s;
+    }
+
+    .project_article button:hover {
+        background-color: #80858b;
+        cursor: pointer;
+    }
+</style>
+
+<article class="project_article">
+    <header>
+        <h1>Snake Game</h1>
+        <time>Nov 04 2026</time>
+    </header>
+    <p>A simple snake game built with C and raylib.</p>
+    <button onclick="location.href='https://github.com/KhoaHoang2001/SnakeGame'">See more >></button>
+</article>
+
+<article class="project_article">
+    <header>
+        <h1>Falling Sand Simulation</h1>
+        <time>Apr 19 2026</time>
+    </header>
+    <p>A falling sand cellular automata simulation built with C++ and raylib.</p>
+    <button onclick="location.href='https://github.com/KhoaHoang2001/FallingSand'">See more >></button>
+</article>
+
+<article class="project_article">
+    <header>
+        <h1>Panda3D Racing Game</h1>
+        <time>May 02 2024</time>
+    </header>
+    <p>A 3D racing game built with Python and Panda3D.</p>
+    <button onclick="location.href='https://github.com/KhoaHoang2001/3d-racing-game-python'">See more >></button>
+</article>
+
+<article class="project_article">
+    <header>
+        <h1>Wokwi Pi Pico Piano</h1>
+        <time>Feb 26 2025</time>
+    </header>
+    <p>A simple Raspberry Pi piano built with Wokwi.</p>
+    <button onclick="location.href='https://github.com/KhoaHoang2001/Wokwi-Pi-Pico-Piano'">See more >></button>
+</article>
+
+<article class="project_article">
+    <header>
+        <h1>Currency Converter Android App</h1>
+        <time>May 31 2022</time>
+    </header>
+    <p>A currency converter app for Android built with Android Studio.</p>
+    <button onclick="location.href='https://github.com/KhoaHoang2001/Wokwi-Pi-Pico-Piano'">See more >></button>
+</article>
+
+<article class="project_article">
+    <header>
+        <h1>Daily Selfie Android App</h1>
+        <time>May 31 2022</time>
+    </header>
+    <p>An app that reminds taking a selfie daily for Android built with Android Studio.</p>
+    <button onclick="location.href='https://github.com/KhoaHoang2001/DailySelfie'">See more >></button>
+</article>
+
+<script>
+    function add_new_project_article(name, time, description) {
+        document.getElementById("content-section").innerHTML += "<article class='project_article'><header><h1>" + name + "<time>" + time + "</time></header><p>" + description + "<button>See more >></button></article>"
+    }
+</script>

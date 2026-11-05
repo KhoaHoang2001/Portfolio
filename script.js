@@ -32,4 +32,4 @@ function display_content(content) {
 }
 
 load_content_from_file("navbar.html", document.getElementById("navbar"))
-display_content("home")
+display_content("projects")
